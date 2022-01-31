@@ -1,0 +1,79 @@
+.main {
+    @include mixmain(65vh,2vw,100vw);
+    h2{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+    .texto{
+        background-color:$fondoitems;
+        height: 60vh;
+        overflow: scroll;
+        padding:3vw;
+
+        p {
+            font-family: $sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(7, 6, 6);
+        }
+    }
+
+    .fotin {
+        display: none;
+    }
+}
+
+.mainb {
+    @include mixmain(100%,0px,100vw);
+    .carrusel {
+        padding: 0px;
+
+        .modelo {
+            height: 65vh;
+            width: 100%;
+        }
+    }
+
+    .formulario {
+        display: flex;
+        background-color: $fondoitems;
+        flex-direction: column;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding: 2vw;
+        label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (min-width:576px) {
+
+
+}
+
+@media (min-width: 992px) {
+    .header {
+        .fas {
+            font-size: 15vh
+        }
+
+        h1 {
+            padding-left: 10vw;
+        }
+    }
+    .main{
+        .fotin{
+            display:flex;
+            height:60vh;
+            .antesdespues{
+                border:5px black solid;
+                border-radius: 25px;
+                width:100%
+            }
+        }
+    }
+}

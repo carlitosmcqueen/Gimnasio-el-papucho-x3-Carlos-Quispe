@@ -1,0 +1,17 @@
+//variables
+@import './variables/colores';
+@import './variables/extend';
+@import './variables/maps';
+@import './variables/mixin';
+@import './variables/fuente';
+
+
+//paginas
+@import './paginas/index';
+@import './paginas/planes.scss';
+
+//secciones
+@import './secciones/header';
+@import './secciones/nav';
+@import './secciones/main';
+@import './secciones/footer';

@@ -1,0 +1,27 @@
+.header{
+    @extend %estiloheader;
+    .fas {
+        @extend %estilofas;
+    }
+    h1{
+        display:none;
+    }
+}
+@media (min-width:576px) {
+    .header {
+        h1 {
+            display: flex;
+            padding-left: 12vw;
+        }
+    }
+}
+@media (min-width:992px){
+    .header {
+        h1{
+            padding-left:11vw;
+        }
+    }
+
+
+
+}

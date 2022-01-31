@@ -1,0 +1,24 @@
+.nav {
+    height: 7vh;
+    background-color: rgb(43, 161, 88);
+    padding: 0px;
+    .nav-barra {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        .nav-item-active {
+            @include mixnav ($fondonavactive,23px);
+        }
+        .nav-item {
+            @include mixnav ($fondonav,20px);
+        }
+        .nav-link {
+            @extend %estilolink;
+        
+        }
+        
+    }
+
+
+}

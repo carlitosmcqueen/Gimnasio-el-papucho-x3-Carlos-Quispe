@@ -1,0 +1,14 @@
+$font-sizes: (
+    h1:40px,
+    h2:35px,
+    h3:30px,
+    h5:25px,
+);
+@each $etiqueta, $tamanio in $font-sizes{
+    #{$etiqueta}{
+        font-size: $tamanio;
+        font-weight:bold;
+        color: black;
+    }
+
+} 

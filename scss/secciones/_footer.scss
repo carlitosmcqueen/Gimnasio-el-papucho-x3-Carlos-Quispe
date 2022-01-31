@@ -1,0 +1,12 @@
+.footer {
+    background-color: $fondofooter;
+    height: 8vh;
+    .footer-items{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .fab{
+            font-size:5vh;
+        }
+    }
+}

@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+.header {
+  background: #1b9c07;
+  background: linear-gradient(0deg, #1b9c07 28%, #1f881d 86%);
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 576px) {
+    .header {
+      justify-content: start; } }
+
+.nav .nav-barra .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  width: 50vw;
+  text-decoration: none;
+  color: black; }
+
+.header .fas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10vh; }
+  @media (min-width: 576px) {
+    .header .fas {
+      justify-content: start;
+      font-size: 13vh;
+      padding-left: 2vw; } }
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: black; }
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: black; }
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: black; }
+
+h5 {
+  font-size: 25px;
+  font-weight: bold;
+  color: black; }
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.header h1 {
+  display: none; }
+
+@media (min-width: 576px) {
+  .header h1 {
+    display: flex;
+    padding-left: 12vw; } }
+
+@media (min-width: 992px) {
+  .header h1 {
+    padding-left: 11vw; } }
+
+.nav {
+  height: 7vh;
+  background-color: #2ba158;
+  padding: 0px; }
+  .nav .nav-barra {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; }
+    .nav .nav-barra .nav-item-active {
+      background-color: #1f881d;
+      font-size: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .nav .nav-barra .nav-item-active:hover {
+        background-color: #1f881d;
+        font-size: 23px; }
+    .nav .nav-barra .nav-item {
+      background-color: #31be1c;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .nav .nav-barra .nav-item:hover {
+        background-color: #1f881d;
+        font-size: 23px; }
+
+.main {
+  height: 65vh;
+  padding: 2vw;
+  width: 100vw;
+  background-image: url(../img/fondogimnasio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  margin: 0px; }
+  .main h2 {
+    text-align: center; }
+  .main h3 {
+    text-align: center; }
+  .main .texto {
+    background-color: #116826b9;
+    height: 60vh;
+    overflow: scroll;
+    padding: 3vw; }
+    .main .texto p {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: #070606; }
+  .main .fotin {
+    display: none; }
+
+.mainb {
+  height: 100%;
+  padding: 0px;
+  width: 100vw;
+  background-image: url(../img/fondogimnasio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  margin: 0px; }
+  .mainb .carrusel {
+    padding: 0px; }
+    .mainb .carrusel .modelo {
+      height: 65vh;
+      width: 100%; }
+  .mainb .formulario {
+    display: flex;
+    background-color: #116826b9;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 2vw; }
+    .mainb .formulario label {
+      font-size: 18px;
+      font-weight: bold; }
+
+@media (min-width: 992px) {
+  .header .fas {
+    font-size: 15vh; }
+  .header h1 {
+    padding-left: 10vw; }
+  .main .fotin {
+    display: flex;
+    height: 60vh; }
+    .main .fotin .antesdespues {
+      border: 5px black solid;
+      border-radius: 25px;
+      width: 100%; } }
+
+.footer {
+  background-color: #055727;
+  height: 8vh; }
+  .footer .footer-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .footer .footer-items .fab {
+      font-size: 5vh; }

@@ -19,4 +19,9 @@
     background-attachment: fixed;
     box-sizing: border-box;
     margin: 0px;
+    overflow:scroll;
+    @media (min-width:992px){
+        overflow:hidden;
+        
+    }
 }

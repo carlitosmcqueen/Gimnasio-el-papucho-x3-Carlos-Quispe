@@ -3,6 +3,7 @@
     background: rgb(27, 156, 7);
     background: linear-gradient(0deg, rgba(27, 156, 7, 1) 28%, rgba(31, 136, 29, 1) 86%);
     height: 20vh;
+    //lo cambio de 100vw antes 100%
     width: 100vw;
     display: flex;
     align-items: center;
@@ -19,10 +20,12 @@
     align-items: center;
     justify-content: center;
     height: 7vh;
-    width: 50vw;
+    width: 25vw;
     text-decoration: none;
     color: black;
 }
+
+
 
 //iconos
 %estilofas {

@@ -1,16 +1,19 @@
 .main {
-    @include mixmain(65vh,2vw,100vw);
-    h2{
+    @include mixmain(65vh, 2vw, 100vw);
+
+    h2 {
         text-align: center;
     }
-    h3{
+
+    h3 {
         text-align: center;
     }
-    .texto{
-        background-color:$fondoitems;
+
+    .texto {
+        background-color: $fondoitems;
         height: 60vh;
         overflow: scroll;
-        padding:3vw;
+        padding: 3vw;
 
         p {
             font-family: $sans-serif;
@@ -19,14 +22,100 @@
             color: rgb(7, 6, 6);
         }
     }
-
     .fotin {
         display: none;
     }
 }
+.info{
+    background-color:$fondoitems;
+    padding: 2vw;
+    margin-bottom: 2vh;
+    box-sizing: border-box;
+    @media (min-width:992px){
+        height:60vh;
+    }
+}
+.mapa{
+    background-color:$fondoitems;
+    padding: 2vw;
+    height:60vh;
+    box-sizing: border-box;
+}
+
+
+.mainc {
+    @include mixmain(65vh, 0px, 100vw);
+
+    h3 {
+        text-align: center;
+    }
+
+    .equipo {
+        background-color: $fondoitems;
+        box-sizing: border-box;
+        display: flex;
+        height: 28vh;
+        align-items: center;
+        justify-content: center;
+
+        .cuadro {
+            position: relative;
+            height: 22vh;
+            overflow: hidden;
+            border-radius: 6px;
+            img {
+                width: 60vw;
+                height: 100%;
+                @media(min-width:576px){
+                    width:35vw;
+                }
+                @media(min-width: 992px){
+                    width:20vw;
+                }
+            }
+
+            .capa {
+                display: none;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(165, 177, 4, 0.7);
+                text-align: center;
+                
+            }
+
+            &:hover {
+                .capa {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    zoom: 150%;
+                }
+            }
+
+            &:visited {
+                .capa {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+
+        }
+
+    }
+
+}
+
 
 .mainb {
-    @include mixmain(100%,0px,100vw);
+    @include mixmain(100%, 0px, 100vw);
+
     .carrusel {
         padding: 0px;
 
@@ -43,18 +132,13 @@
         justify-content: space-around;
         box-sizing: border-box;
         padding: 2vw;
+
         label {
             font-size: 18px;
             font-weight: bold;
         }
     }
 }
-
-@media (min-width:576px) {
-
-
-}
-
 @media (min-width: 992px) {
     .header {
         .fas {
@@ -65,14 +149,16 @@
             padding-left: 10vw;
         }
     }
-    .main{
-        .fotin{
-            display:flex;
-            height:60vh;
-            .antesdespues{
-                border:5px black solid;
+
+    .main {
+        .fotin {
+            display: flex;
+            height: 60vh;
+
+            .antesdespues {
+                border: 5px black solid;
                 border-radius: 25px;
-                width:100%
+                width: 100%
             }
         }
     }

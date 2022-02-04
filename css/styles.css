@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
   height: 7vh;
-  width: 50vw;
+  width: 25vw;
   text-decoration: none;
   color: black; }
 
@@ -54,6 +54,11 @@ h5 {
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box; }
+
+* {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box; }
 
 * {
@@ -110,7 +115,11 @@ h5 {
   background-size: cover;
   background-attachment: fixed;
   box-sizing: border-box;
-  margin: 0px; }
+  margin: 0px;
+  overflow: scroll; }
+  @media (min-width: 992px) {
+    .main {
+      overflow: hidden; } }
   .main h2 {
     text-align: center; }
   .main h3 {
@@ -128,6 +137,80 @@ h5 {
   .main .fotin {
     display: none; }
 
+.info {
+  background-color: #116826b9;
+  padding: 2vw;
+  margin-bottom: 2vh;
+  box-sizing: border-box; }
+  @media (min-width: 992px) {
+    .info {
+      height: 60vh; } }
+
+.mapa {
+  background-color: #116826b9;
+  padding: 2vw;
+  height: 60vh;
+  box-sizing: border-box; }
+
+.mainc {
+  height: 65vh;
+  padding: 0px;
+  width: 100vw;
+  background-image: url(../img/fondogimnasio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  margin: 0px;
+  overflow: scroll; }
+  @media (min-width: 992px) {
+    .mainc {
+      overflow: hidden; } }
+  .mainc h3 {
+    text-align: center; }
+  .mainc .equipo {
+    background-color: #116826b9;
+    box-sizing: border-box;
+    display: flex;
+    height: 28vh;
+    align-items: center;
+    justify-content: center; }
+    .mainc .equipo .cuadro {
+      position: relative;
+      height: 22vh;
+      overflow: hidden;
+      border-radius: 6px; }
+      .mainc .equipo .cuadro img {
+        width: 60vw;
+        height: 100%; }
+        @media (min-width: 576px) {
+          .mainc .equipo .cuadro img {
+            width: 35vw; } }
+        @media (min-width: 992px) {
+          .mainc .equipo .cuadro img {
+            width: 20vw; } }
+      .mainc .equipo .cuadro .capa {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(165, 177, 4, 0.7);
+        text-align: center; }
+      .mainc .equipo .cuadro:hover .capa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        zoom: 150%; }
+      .mainc .equipo .cuadro:visited .capa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; }
+
 .mainb {
   height: 100%;
   padding: 0px;
@@ -137,7 +220,11 @@ h5 {
   background-size: cover;
   background-attachment: fixed;
   box-sizing: border-box;
-  margin: 0px; }
+  margin: 0px;
+  overflow: scroll; }
+  @media (min-width: 992px) {
+    .mainb {
+      overflow: hidden; } }
   .mainb .carrusel {
     padding: 0px; }
     .mainb .carrusel .modelo {

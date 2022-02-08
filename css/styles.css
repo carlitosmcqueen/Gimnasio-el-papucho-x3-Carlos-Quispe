@@ -116,7 +116,8 @@ h5 {
   background-attachment: fixed;
   box-sizing: border-box;
   margin: 0px;
-  overflow: scroll; }
+  overflow-y: scroll;
+  overflow-x: hidden; }
   .main h2 {
     text-align: center; }
   .main h3 {
@@ -158,7 +159,8 @@ h5 {
   background-attachment: fixed;
   box-sizing: border-box;
   margin: 0px;
-  overflow: scroll; }
+  overflow-y: scroll;
+  overflow-x: hidden; }
   .mainc h3 {
     text-align: center; }
   .mainc .equipo {
@@ -218,7 +220,8 @@ h5 {
   background-attachment: fixed;
   box-sizing: border-box;
   margin: 0px;
-  overflow: scroll; }
+  overflow-y: scroll;
+  overflow-x: hidden; }
   .mainb .carrusel {
     padding: 0px; }
     .mainb .carrusel .modelo {
@@ -230,7 +233,7 @@ h5 {
     flex-direction: column;
     justify-content: space-around;
     box-sizing: border-box;
-    padding: 2vw; }
+    padding: 5vh; }
     .mainb .formulario label {
       font-size: 18px;
       font-weight: bold; }

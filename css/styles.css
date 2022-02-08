@@ -117,20 +117,16 @@ h5 {
   box-sizing: border-box;
   margin: 0px;
   overflow: scroll; }
-  @media (min-width: 992px) {
-    .main {
-      overflow: hidden; } }
   .main h2 {
     text-align: center; }
   .main h3 {
     text-align: center; }
   .main .texto {
     background-color: #116826b9;
-    height: 60vh;
-    overflow: scroll;
-    padding: 3vw; }
+    padding: 2vw; }
     .main .texto p {
       font-family: "Josefin Sans", sans-serif;
+      line-height: 35px;
       font-size: 20px;
       font-weight: bold;
       color: #070606; }
@@ -155,7 +151,7 @@ h5 {
 .mainc {
   height: 65vh;
   padding: 0px;
-  width: 100vw;
+  width: 100%;
   background-image: url(../img/fondogimnasio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,16 +159,14 @@ h5 {
   box-sizing: border-box;
   margin: 0px;
   overflow: scroll; }
-  @media (min-width: 992px) {
-    .mainc {
-      overflow: hidden; } }
   .mainc h3 {
     text-align: center; }
   .mainc .equipo {
     background-color: #116826b9;
     box-sizing: border-box;
     display: flex;
-    height: 28vh;
+    height: 30vh;
+    padding: 0px;
     align-items: center;
     justify-content: center; }
     .mainc .equipo .cuadro {
@@ -188,7 +182,7 @@ h5 {
             width: 35vw; } }
         @media (min-width: 992px) {
           .mainc .equipo .cuadro img {
-            width: 20vw; } }
+            width: 22vw; } }
       .mainc .equipo .cuadro .capa {
         display: none;
         position: absolute;
@@ -203,13 +197,16 @@ h5 {
         align-items: center;
         justify-content: center;
         text-align: center;
-        zoom: 150%; }
+        zoom: 120%; }
       .mainc .equipo .cuadro:visited .capa {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center; }
+  @media (min-width: 576px) {
+    .mainc .equipo .cuadro:hover .capa {
+      zoom: 110%; } }
 
 .mainb {
   height: 100%;
@@ -222,9 +219,6 @@ h5 {
   box-sizing: border-box;
   margin: 0px;
   overflow: scroll; }
-  @media (min-width: 992px) {
-    .mainb {
-      overflow: hidden; } }
   .mainb .carrusel {
     padding: 0px; }
     .mainb .carrusel .modelo {
@@ -248,11 +242,13 @@ h5 {
     padding-left: 10vw; }
   .main .fotin {
     display: flex;
-    height: 60vh; }
+    align-items: center;
+    justify-content: center; }
     .main .fotin .antesdespues {
       border: 5px black solid;
       border-radius: 25px;
-      width: 100%; } }
+      height: 80%;
+      width: 90%; } }
 
 .footer {
   background-color: #055727;

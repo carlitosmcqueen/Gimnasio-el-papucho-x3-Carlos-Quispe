@@ -11,40 +11,43 @@
 
     .texto {
         background-color: $fondoitems;
-        height: 60vh;
-        overflow: scroll;
-        padding: 3vw;
+        padding: 2vw;
 
         p {
             font-family: $sans-serif;
+            line-height:35px;
             font-size: 20px;
             font-weight: bold;
             color: rgb(7, 6, 6);
         }
     }
+
     .fotin {
         display: none;
     }
 }
-.info{
-    background-color:$fondoitems;
+
+.info {
+    background-color: $fondoitems;
     padding: 2vw;
     margin-bottom: 2vh;
     box-sizing: border-box;
-    @media (min-width:992px){
-        height:60vh;
+
+    @media (min-width:992px) {
+        height: 60vh;
     }
 }
-.mapa{
-    background-color:$fondoitems;
+
+.mapa {
+    background-color: $fondoitems;
     padding: 2vw;
-    height:60vh;
+    height: 60vh;
     box-sizing: border-box;
 }
 
 
 .mainc {
-    @include mixmain(65vh, 0px, 100vw);
+    @include mixmain(65vh, 0px, 100%);
 
     h3 {
         text-align: center;
@@ -54,23 +57,26 @@
         background-color: $fondoitems;
         box-sizing: border-box;
         display: flex;
-        height: 28vh;
+        height: 30vh;
+        padding:0px;
         align-items: center;
         justify-content: center;
-
         .cuadro {
             position: relative;
             height: 22vh;
             overflow: hidden;
             border-radius: 6px;
+
             img {
                 width: 60vw;
                 height: 100%;
-                @media(min-width:576px){
-                    width:35vw;
+
+                @media(min-width:576px) {
+                    width: 35vw;
                 }
-                @media(min-width: 992px){
-                    width:20vw;
+
+                @media(min-width: 992px) {
+                    width: 22vw;
                 }
             }
 
@@ -82,7 +88,6 @@
                 height: 100%;
                 background-color: rgba(165, 177, 4, 0.7);
                 text-align: center;
-                
             }
 
             &:hover {
@@ -92,7 +97,7 @@
                     align-items: center;
                     justify-content: center;
                     text-align: center;
-                    zoom: 150%;
+                    zoom: 120%;
                 }
             }
 
@@ -106,6 +111,19 @@
                 }
             }
 
+        }
+
+    }
+
+    @media(min-width: 576px) {
+        .equipo {
+            .cuadro {
+                &:hover{
+                    .capa{
+                        zoom:110%;
+                    }
+                }
+            }
         }
 
     }
@@ -139,6 +157,7 @@
         }
     }
 }
+
 @media (min-width: 992px) {
     .header {
         .fas {
@@ -153,12 +172,13 @@
     .main {
         .fotin {
             display: flex;
-            height: 60vh;
-
+            align-items: center;
+            justify-content: center;
             .antesdespues {
                 border: 5px black solid;
                 border-radius: 25px;
-                width: 100%
+                height:80%;
+                width: 90%;
             }
         }
     }

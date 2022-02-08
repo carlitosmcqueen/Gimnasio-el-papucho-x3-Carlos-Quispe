@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 .header {
-  background: #1b9c07;
-  background: linear-gradient(0deg, #1b9c07 28%, #1f881d 86%);
+  background: #6af5ef;
+  background: linear-gradient(0deg, #6af5ef 35%, #1afac2 86%);
   height: 20vh;
   width: 100vw;
   display: flex;
@@ -88,54 +88,55 @@ h5 {
     margin: 0px;
     box-sizing: border-box; }
     .nav .nav-barra .nav-item-active {
-      background-color: #1f881d;
+      background-color: #02c4ba;
       font-size: 23px;
       display: flex;
       align-items: center;
       justify-content: center; }
       .nav .nav-barra .nav-item-active:hover {
-        background-color: #1f881d;
+        background-color: #02c4ba;
         font-size: 23px; }
     .nav .nav-barra .nav-item {
-      background-color: #31be1c;
+      background-color: #6af5ef;
       font-size: 20px;
       display: flex;
       align-items: center;
       justify-content: center; }
       .nav .nav-barra .nav-item:hover {
-        background-color: #1f881d;
+        background-color: #02c4ba;
         font-size: 23px; }
 
 .main {
   height: 65vh;
   padding: 2vw;
-  width: 100vw;
+  width: 100%;
   background-image: url(../img/fondogimnasio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   box-sizing: border-box;
   margin: 0px;
-  overflow-y: scroll;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: scroll; }
   .main h2 {
     text-align: center; }
   .main h3 {
     text-align: center; }
   .main .texto {
-    background-color: #116826b9;
-    padding: 2vw; }
+    background-color: #22bbc0b9;
+    padding: 2vw;
+    border-radius: 10px; }
     .main .texto p {
       font-family: "Josefin Sans", sans-serif;
       line-height: 35px;
-      font-size: 20px;
+      font-size: 21px;
       font-weight: bold;
-      color: #070606; }
+      color: black; }
   .main .fotin {
     display: none; }
 
 .info {
-  background-color: #116826b9;
+  background-color: #22bbc0b9;
   padding: 2vw;
   margin-bottom: 2vh;
   box-sizing: border-box; }
@@ -144,14 +145,14 @@ h5 {
       height: 60vh; } }
 
 .mapa {
-  background-color: #116826b9;
+  background-color: #22bbc0b9;
   padding: 2vw;
   height: 60vh;
   box-sizing: border-box; }
 
 .mainc {
   height: 65vh;
-  padding: 0px;
+  padding: 1vh;
   width: 100%;
   background-image: url(../img/fondogimnasio.jpg);
   background-repeat: no-repeat;
@@ -159,23 +160,25 @@ h5 {
   background-attachment: fixed;
   box-sizing: border-box;
   margin: 0px;
-  overflow-y: scroll;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: scroll; }
   .mainc h3 {
     text-align: center; }
   .mainc .equipo {
-    background-color: #116826b9;
+    background-color: #22bbc0b9;
     box-sizing: border-box;
     display: flex;
     height: 29vh;
     padding: 0px;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif; }
     .mainc .equipo .cuadro {
       position: relative;
       height: 22vh;
       overflow: hidden;
-      border-radius: 6px; }
+      border-radius: 10px;
+      box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.5); }
       .mainc .equipo .cuadro img {
         width: 60vw;
         height: 100%; }
@@ -191,15 +194,18 @@ h5 {
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(165, 177, 4, 0.7);
+        background-color: rgba(26, 250, 194, 0.6);
         text-align: center; }
+        .mainc .equipo .cuadro .capa h6 {
+          font-size: 22px;
+          font-weight: bold; }
       .mainc .equipo .cuadro:hover .capa {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        zoom: 120%; }
+        zoom: 110%; }
       .mainc .equipo .cuadro:visited .capa {
         display: flex;
         flex-direction: column;
@@ -211,17 +217,17 @@ h5 {
       zoom: 110%; } }
 
 .mainb {
-  height: 100%;
+  height: 65vh;
   padding: 0px;
-  width: 100vw;
+  width: 100%;
   background-image: url(../img/fondogimnasio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   box-sizing: border-box;
   margin: 0px;
-  overflow-y: scroll;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: scroll; }
   .mainb .carrusel {
     padding: 0px; }
     .mainb .carrusel .modelo {
@@ -229,7 +235,7 @@ h5 {
       width: 100%; }
   .mainb .formulario {
     display: flex;
-    background-color: #116826b9;
+    background-color: #22bbc0b9;
     flex-direction: column;
     justify-content: space-around;
     box-sizing: border-box;
@@ -254,7 +260,7 @@ h5 {
       width: 90%; } }
 
 .footer {
-  background-color: #055727;
+  background-color: #04ada5;
   height: 8vh; }
   .footer .footer-items {
     display: flex;

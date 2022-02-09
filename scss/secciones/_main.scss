@@ -27,18 +27,18 @@
 .info {
     background-color: $fondoitems;
     padding: 2vw;
-    margin-bottom: 2vh;
+    height:56vh;
     box-sizing: border-box;
-
+    margin-bottom: 2vh;
     @media (min-width:992px) {
-        height: 60vh;
+        margin-bottom: 0px;
     }
 }
 
 .mapa {
     background-color: $fondoitems;
     padding: 2vw;
-    height: 60vh;
+    height: 56vh;
     box-sizing: border-box;
 }
 
@@ -138,7 +138,7 @@
 
     .carrusel {
         padding: 0px;
-
+        box-sizing: border-box;
         .modelo {
             height: 65vh;
             width: 100%;
@@ -153,7 +153,7 @@
         box-sizing: border-box;
         padding:5vh;
         label {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
         }
     }

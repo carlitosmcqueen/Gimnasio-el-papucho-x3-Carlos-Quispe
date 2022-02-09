@@ -5,8 +5,6 @@
     .nav-barra {
         display: flex;
         padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
         .nav-item-active {
             @include mixnav ($fondonavactive,23px);
         }
@@ -17,8 +15,5 @@
             @extend %estilolink;
         
         }
-        
     }
-
-
 }

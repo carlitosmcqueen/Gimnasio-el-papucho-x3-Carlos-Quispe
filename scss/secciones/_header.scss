@@ -1,5 +1,8 @@
 .header{
     @extend %estiloheader;
+    a{
+        text-decoration: none;
+    }
     .fas {
         @extend %estilofas;
     }

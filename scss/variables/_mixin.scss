@@ -2,8 +2,6 @@
     background-color: $fondo;
     font-size: $tamanio;
     display: flex;
-    align-items: center;
-    justify-content: center;
     &:hover{
         background-color:$fondonavactive;
         font-size: 23px;
@@ -18,7 +16,6 @@
     background-size: cover;
     background-attachment: fixed;
     box-sizing: border-box;
-    margin: 0px;
     overflow-x: hidden;
     overflow-y: scroll; 
     

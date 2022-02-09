@@ -24,6 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
   font-size: 10vh; }
   @media (min-width: 576px) {
     .header .fas {
@@ -66,6 +67,9 @@ h5 {
   padding: 0px;
   box-sizing: border-box; }
 
+.header a {
+  text-decoration: none; }
+
 .header h1 {
   display: none; }
 
@@ -84,24 +88,18 @@ h5 {
   padding: 0px; }
   .nav .nav-barra {
     display: flex;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box; }
+    padding: 0px; }
     .nav .nav-barra .nav-item-active {
       background-color: #02c4ba;
       font-size: 23px;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
+      display: flex; }
       .nav .nav-barra .nav-item-active:hover {
         background-color: #02c4ba;
         font-size: 23px; }
     .nav .nav-barra .nav-item {
       background-color: #6af5ef;
       font-size: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
+      display: flex; }
       .nav .nav-barra .nav-item:hover {
         background-color: #02c4ba;
         font-size: 23px; }
@@ -115,7 +113,6 @@ h5 {
   background-size: cover;
   background-attachment: fixed;
   box-sizing: border-box;
-  margin: 0px;
   overflow-x: hidden;
   overflow-y: scroll; }
   .main h2 {
@@ -138,16 +135,17 @@ h5 {
 .info {
   background-color: #22bbc0b9;
   padding: 2vw;
-  margin-bottom: 2vh;
-  box-sizing: border-box; }
+  height: 56vh;
+  box-sizing: border-box;
+  margin-bottom: 2vh; }
   @media (min-width: 992px) {
     .info {
-      height: 60vh; } }
+      margin-bottom: 0px; } }
 
 .mapa {
   background-color: #22bbc0b9;
   padding: 2vw;
-  height: 60vh;
+  height: 56vh;
   box-sizing: border-box; }
 
 .mainc {
@@ -159,7 +157,6 @@ h5 {
   background-size: cover;
   background-attachment: fixed;
   box-sizing: border-box;
-  margin: 0px;
   overflow-x: hidden;
   overflow-y: scroll; }
   .mainc h3 {
@@ -225,11 +222,11 @@ h5 {
   background-size: cover;
   background-attachment: fixed;
   box-sizing: border-box;
-  margin: 0px;
   overflow-x: hidden;
   overflow-y: scroll; }
   .mainb .carrusel {
-    padding: 0px; }
+    padding: 0px;
+    box-sizing: border-box; }
     .mainb .carrusel .modelo {
       height: 65vh;
       width: 100%; }
@@ -241,7 +238,7 @@ h5 {
     box-sizing: border-box;
     padding: 5vh; }
     .mainb .formulario label {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: bold; }
 
 @media (min-width: 992px) {
@@ -264,7 +261,8 @@ h5 {
   height: 8vh; }
   .footer .footer-items {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between; }
     .footer .footer-items .fab {
-      font-size: 5vh; }
+      font-size: 5vh;
+      color: #242424; }

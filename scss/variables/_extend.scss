@@ -12,13 +12,15 @@
         justify-content: start;
     }
 }
+
 //mapa
 %estilomapa {
     background-color: $fondoitems;
     padding: 2vw;
-    height: 56vh;
+    height: 54vh;
     box-sizing: border-box;
 }
+
 //nav-link
 %estilolink {
     display: flex;
@@ -30,7 +32,73 @@
     color: black;
 }
 
+//cuadro
+%cuadro {
+    position: relative;
+    height: 22vh;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.5);
 
+    img {
+        width: 60vw;
+        height: 100%;
+    }
+
+    .capa {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(26, 250, 194, 0.6);
+        text-align: center;
+
+        h6 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+    }
+
+    &:hover {
+        .capa {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            zoom: 110%;
+        }
+    }
+
+    &:visited {
+        .capa {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    @media (min-width:576px) {
+        img {
+            width: 35vw;
+        }
+
+        &:hover {
+            .capa {
+                //dentro de mainc dentro de cuadro dento de hover dentro de capa 
+                zoom: 110%;
+            }
+        }
+    }
+    @media (min-width:992px){
+        img {
+            width: 22vw;
+        }
+    }
+}
 
 //iconos
 %estilofas {
@@ -39,11 +107,22 @@
     justify-content: center;
     color: black;
     font-size: 10vh;
+
     @media (min-width:576px) {
         justify-content: start;
         font-size: 13vh;
         padding-left: 2vw;
     }
+}
+
+//formulario
+%formulario {
+    display: flex;
+    background-color: $fondoitems;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 5vh;
 }
 
 //footer

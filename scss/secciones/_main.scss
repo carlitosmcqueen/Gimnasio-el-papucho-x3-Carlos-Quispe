@@ -9,38 +9,46 @@
     .texto {
         background-color: $fondoitems;
         padding: 2vw;
-        border-radius:10px;
+        border-radius: 10px;
+
         p {
             font-family: $sans-serif;
-            line-height:35px;
+            line-height: 35px;
             font-size: 21px;
             font-weight: bold;
             color: black;
         }
     }
-
     .fotin {
         display: none;
     }
-}
+    .info {
+        background-color: $fondoitems;
+        padding: 2vw;
+        height: 56vh;
+        box-sizing: border-box;
+        margin-bottom: 2vh;
 
-.info {
-    background-color: $fondoitems;
-    padding: 2vw;
-    height:56vh;
-    box-sizing: border-box;
-    margin-bottom: 2vh;
-    @media (min-width:992px) {
-        margin-bottom: 0px;
+        p {
+            font-family: $sans-serif;
+            line-height: 35px;
+            font-size: 21px;
+            font-weight: bold;
+            color: black;
+        }
+        //dentro de info dentro de main
+        @media (min-width:992px) {
+            margin-bottom: 0px;
+        }
+    }
+    .mapa {
+    @extend %estilomapa;
     }
 }
 
-.mapa {
-    background-color: $fondoitems;
-    padding: 2vw;
-    height: 56vh;
-    box-sizing: border-box;
-}
+
+
+
 
 
 .mainc {
@@ -48,6 +56,7 @@
 
     h3 {
         text-align: center;
+        color: rgb(216, 216, 216);
     }
 
     .equipo {
@@ -55,16 +64,18 @@
         box-sizing: border-box;
         display: flex;
         height: 29vh;
-        padding:0px;
+        padding: 0px;
         align-items: center;
         justify-content: center;
         font-family: $sans-serif;
+
         .cuadro {
             position: relative;
             height: 22vh;
             overflow: hidden;
             border-radius: 10px;
-            box-shadow: 0px 15px 45px rgba(0,0,0,0.5);
+            box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.5);
+
             img {
                 width: 60vw;
                 height: 100%;
@@ -86,7 +97,8 @@
                 height: 100%;
                 background-color: rgba(26, 250, 194, 0.6);
                 text-align: center;
-                h6{
+
+                h6 {
                     font-size: 22px;
                     font-weight: bold;
                 }
@@ -120,9 +132,9 @@
     @media(min-width: 576px) {
         .equipo {
             .cuadro {
-                &:hover{
-                    .capa{
-                        zoom:110%;
+                &:hover {
+                    .capa {
+                        zoom: 110%;
                     }
                 }
             }
@@ -134,24 +146,24 @@
 
 
 .mainb {
-    @include mixmain(65vh,0px,100%);
+    @include mixmain(65vh, 0px, 100%);
 
     .carrusel {
         padding: 0px;
         box-sizing: border-box;
+
         .modelo {
             height: 65vh;
             width: 100%;
         }
     }
-
     .formulario {
         display: flex;
         background-color: $fondoitems;
         flex-direction: column;
         justify-content: space-around;
         box-sizing: border-box;
-        padding:5vh;
+        padding: 5vh;
         label {
             font-size: 20px;
             font-weight: bold;
@@ -175,10 +187,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
             .antesdespues {
                 border: 5px black solid;
                 border-radius: 25px;
-                height:80%;
+                height: 80%;
                 width: 90%;
             }
         }

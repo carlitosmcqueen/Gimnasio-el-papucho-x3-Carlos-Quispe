@@ -12,7 +12,13 @@
         justify-content: start;
     }
 }
-
+//mapa
+%estilomapa {
+    background-color: $fondoitems;
+    padding: 2vw;
+    height: 56vh;
+    box-sizing: border-box;
+}
 //nav-link
 %estilolink {
     display: flex;

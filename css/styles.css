@@ -11,6 +11,12 @@
     .header {
       justify-content: start; } }
 
+.main .mapa {
+  background-color: #22bbc0b9;
+  padding: 2vw;
+  height: 56vh;
+  box-sizing: border-box; }
+
 .nav .nav-barra .nav-link {
   display: flex;
   align-items: center;
@@ -131,22 +137,21 @@ h5 {
       color: black; }
   .main .fotin {
     display: none; }
-
-.info {
-  background-color: #22bbc0b9;
-  padding: 2vw;
-  height: 56vh;
-  box-sizing: border-box;
-  margin-bottom: 2vh; }
-  @media (min-width: 992px) {
-    .info {
-      margin-bottom: 0px; } }
-
-.mapa {
-  background-color: #22bbc0b9;
-  padding: 2vw;
-  height: 56vh;
-  box-sizing: border-box; }
+  .main .info {
+    background-color: #22bbc0b9;
+    padding: 2vw;
+    height: 56vh;
+    box-sizing: border-box;
+    margin-bottom: 2vh; }
+    .main .info p {
+      font-family: "Josefin Sans", sans-serif;
+      line-height: 35px;
+      font-size: 21px;
+      font-weight: bold;
+      color: black; }
+    @media (min-width: 992px) {
+      .main .info {
+        margin-bottom: 0px; } }
 
 .mainc {
   height: 65vh;
@@ -160,7 +165,8 @@ h5 {
   overflow-x: hidden;
   overflow-y: scroll; }
   .mainc h3 {
-    text-align: center; }
+    text-align: center;
+    color: #d8d8d8; }
   .mainc .equipo {
     background-color: #22bbc0b9;
     box-sizing: border-box;

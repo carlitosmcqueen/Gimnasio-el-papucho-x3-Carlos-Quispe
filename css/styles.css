@@ -68,17 +68,20 @@
     .mainc .equipo .cuadro img {
       width: 22vw; } }
 
-.header .fas {
+.header a .fas {
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
   font-size: 10vh; }
   @media (min-width: 576px) {
-    .header .fas {
+    .header a .fas {
       justify-content: start;
       font-size: 13vh;
       padding-left: 2vw; } }
+  @media (min-width: 992px) {
+    .header a .fas {
+      font-size: 15vh; } }
 
 .mainb .formulario {
   display: flex;
@@ -141,9 +144,7 @@ h5 {
 
 @media (min-width: 992px) {
   .header h1 {
-    padding-left: 10vw; }
-  .header .fas {
-    font-size: 15vh; } }
+    padding-left: 10vw; } }
 
 .nav {
   height: 7vh;

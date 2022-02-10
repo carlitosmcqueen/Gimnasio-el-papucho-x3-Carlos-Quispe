@@ -1,15 +1,19 @@
-.header{
+.header {
     @extend %estiloheader;
-    a{
+
+    a {
         text-decoration: none;
+
+        .fas {
+            @extend %estilofas;
+        }
     }
-    .fas {
-        @extend %estilofas;
-    }
-    h1{
-        display:none;
+
+    h1 {
+        display: none;
     }
 }
+
 @media (min-width:576px) {
     .header {
         h1 {
@@ -18,13 +22,11 @@
         }
     }
 }
-@media (min-width:992px){
+
+@media (min-width:992px) {
     .header {
-        h1{
-            padding-left:10vw;
-        }
-        .fas {
-            font-size: 15vh
+        h1 {
+            padding-left: 10vw;
         }
     }
 }

@@ -106,11 +106,13 @@
     justify-content: center;
     color: black;
     font-size: 10vh;
-
     @media (min-width:576px) {
         justify-content: start;
         font-size: 13vh;
         padding-left: 2vw;
+    }
+    @media (min-width:992px){
+        font-size:15vh;
     }
 }
 

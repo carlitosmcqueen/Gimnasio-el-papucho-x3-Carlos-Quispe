@@ -16,17 +16,17 @@
 
 @media (min-width:576px) {
     .header {
-        h1 {
-            display: flex;
-            padding-left: 12vw;
+        h1{
+            display:flex;
         }
     }
 }
 
 @media (min-width:992px) {
-    .header {
-        h1 {
-            padding-left: 10vw;
+    .header{
+        h1{
+            padding-top:2vh;
+            padding-left: 2vw;
         }
     }
 }

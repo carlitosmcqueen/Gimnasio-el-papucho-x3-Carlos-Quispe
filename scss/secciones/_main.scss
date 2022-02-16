@@ -48,14 +48,14 @@
         @extend %estilomapa;
     }
 }
-
-
 .mainc {
     @include mixmain(65vh, 1vh, 100%);
 
     h3 {
         text-align: center;
-        color: rgb(216, 216, 216);
+        background-color:$fondoitems;
+        margin: 0px;
+        color: black;
     }
 
     .equipo {

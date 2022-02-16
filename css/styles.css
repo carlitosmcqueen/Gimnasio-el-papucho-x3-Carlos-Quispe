@@ -222,7 +222,9 @@ h5 {
   overflow-y: scroll; }
   .mainc h3 {
     text-align: center;
-    color: #d8d8d8; }
+    background-color: #22bbc0b9;
+    margin: 0px;
+    color: black; }
   .mainc .equipo {
     background-color: #22bbc0b9;
     box-sizing: border-box;

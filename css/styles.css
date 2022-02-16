@@ -248,27 +248,32 @@ h5 {
     padding: 0px;
     box-sizing: border-box; }
     .mainb .carrusel .modelo {
-      height: 65vh;
+      height: 55vh;
       width: 100%; }
+    .mainb .carrusel h5 {
+      color: white; }
   .mainb .formulario label {
     font-size: 20px;
     font-weight: bold; }
 
 @media (min-width: 576px) {
+  .mainb .carrusel .modelo {
+    height: 60vh; }
   .mainc .equipo {
     padding: 5vh; } }
 
 @media (min-width: 992px) {
   .main .fotin {
     display: flex;
-    align-items: center;
+    margin-bottom: 0px;
     justify-content: center;
-    margin-bottom: 0px; }
+    align-items: center; }
     .main .fotin .antesdespues {
       border: 5px black solid;
       border-radius: 25px;
-      height: 80%;
-      width: 90%; }
+      height: 45vh; }
+  .mainb .carrusel .modelo {
+    height: 65vh; }
   .mainc .equipo {
     padding: 6vw; } }
 

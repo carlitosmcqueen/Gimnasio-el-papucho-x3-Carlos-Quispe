@@ -80,10 +80,12 @@
     .carrusel {
         padding: 0px;
         box-sizing: border-box;
-
         .modelo {
-            height: 65vh;
+            height: 55vh;
             width: 100%;
+        }
+        h5{
+            color: white;
         }
     }
 
@@ -98,6 +100,13 @@
 }
 
 @media (min-width:576px) {
+    .mainb{
+        .carrusel{
+            .modelo{
+                height: 60vh;
+            }
+        }
+    }
     .mainc {
         .equipo {
             padding: 5vh;
@@ -109,21 +118,25 @@
 @media (min-width: 992px) {
     .main {
         .fotin {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display:flex;
             margin-bottom: 0px;
+            justify-content:center;
+            align-items:center;
 
             .antesdespues {
                 border: 5px black solid;
                 border-radius: 25px;
-                height: 80%;
-                width: 90%;
+                height: 45vh;
             }
         }
-
     }
-
+    .mainb{
+        .carrusel{
+            .modelo{
+                height: 65vh;
+            }
+        }
+    }
     .mainc {
         .equipo {
             padding: 6vw;
